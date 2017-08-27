@@ -1,0 +1,33 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="Blog.MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+     <table style="width: 80%; height:650px; background-image:url('image/4.jpg')" align="center">
+        <tr>
+        <td colspan="3" align="center" 
+                style="height:20px;font-family :宋体;font-size:xx-large;color:#3366FF">博客后台</td>
+        </tr>
+        <tr>
+        <td style="width:240px;height:190;font-family:华文隶书;font-size:x-large;" align="center">
+        <a href=" Default.aspx"  style="color:red">浏览前台</a><br />
+        <a href="UserEdit.aspx" style="color:red">用户管理</a><br />
+        <a href="BlogTypeManage.aspx" style="color:red">日志类型</a><br />
+        <a href="BlogManage.aspx" style="color:red">日志管理</a><br />
+        </td>
+        <td style="height:190px" valign="top" >
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+         </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>
